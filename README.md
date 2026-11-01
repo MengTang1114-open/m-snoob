@@ -97,6 +97,8 @@ open /Applications/Snoob.app
 IDENTITY="Developer ID Application: …" ./build.sh   # 用你的开发者证书签名
 ```
 
+打包发布：`./release.sh <版本> --dry-run` 先在 `dist/` 里出一个 dmg 自己装一遍，没问题再 `./release.sh <版本> "这一版改了什么"` 发到 GitHub Release。有 Apple 开发者证书就自动签名、公证，没有就出未签名的包，用法写在脚本开头。
+
 代码在 `Sources/Snowhush/`（Swift 目标名沿用上游，没改）。在 Snowhush 之上主要加了这几个文件：
 
 | 文件 | 做什么 |
