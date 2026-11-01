@@ -9,13 +9,19 @@
   它就从窗口顶上的积雪里「噗」地冒出来，举起红牌子催你站起来。
 </p>
 
+<p align="center">
+  <a href="https://github.com/MengTang1114-open/m-snoob/releases/latest">下载 dmg</a> ·
+  <a href="docs/INSTALL.md">安装说明</a> ·
+  <a href="LICENSE">MIT</a>
+</p>
+
 <p align="center"><i>A little snow ghost for your Mac desktop. Work for 25 minutes straight and it pops out of the snow on your window and holds up a sign telling you to take a break.</i></p>
 
 <p align="center">
   <img src="docs/hero.gif" width="640" alt="积雪鼓起来，雪噗噗冒出来、挥手、举起 25min 的牌子；点它一下，它散回雪里">
 </p>
 
-> 目前只支持 **macOS 14 及以上**（Apple 芯片和 Intel 都行），界面是中文。需要从源码编译，步骤见下面「安装」。
+> 目前只支持 **macOS 14 及以上**（Apple 芯片和 Intel 都行），界面是中文。
 
 ## 它会做什么
 
@@ -59,7 +65,13 @@
 
 ## 安装
 
-### 让 Agent 帮你装（推荐）
+### 下载安装（推荐）
+
+到 [Releases](https://github.com/MengTang1114-open/m-snoob/releases/latest) 下载 `Snoob-<版本>.dmg`，双击打开，把雪噗噗拖进「应用程序」。
+
+这个版本还没有 Apple 开发者签名，第一次打开会被 macOS 拦一下，按 [安装说明](docs/INSTALL.md) 放行一次就好。
+
+### 让 Agent 帮你从源码装
 
 把这句话贴给 Claude Code、Codex 或别的能跑命令的 Agent：
 
@@ -67,7 +79,7 @@
 把 https://github.com/MengTang1114-open/m-snoob 装到我的 Mac 上，按仓库里的 AGENTS.md 编译、放进「应用程序」并打开。
 ```
 
-### 自己装
+### 自己从源码编译
 
 需要 Xcode 或 Xcode 命令行工具（Swift 5.9 以上）。没有的话先跑 `xcode-select --install`。
 
